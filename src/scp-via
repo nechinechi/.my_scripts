@@ -1,0 +1,3 @@
+#!/bin/sh
+
+scp -r -o "ProxyCommand ssh $1 nc %h %p" $2 $3
